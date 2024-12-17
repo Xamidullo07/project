@@ -1,0 +1,41 @@
+.skeleton{
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+}
+
+.skeleton__itme{
+    padding: 12px;
+    border: 1px solid #ddd;
+
+}
+
+.skeleton__image{
+    width: 100%;
+    height: 250px;
+    background: #aaa;
+}
+
+.skeleton__title{
+    width: 80%;
+    height: 40px;
+    background: #aaa;
+    margin-top: 12px;
+}
+
+.skeleton__title:last-child{
+    width: 60%;
+}
+
+.skeleton__animetion{
+    background: linear-gradient(90deg, #aaa, #eee, #aaa);
+    background-size: 200%;
+    animation: skeleton 1s linear infinite ;
+}
+
+@keyframes skeleton{
+    to{
+        background-position: 200%;
+    }
+}
